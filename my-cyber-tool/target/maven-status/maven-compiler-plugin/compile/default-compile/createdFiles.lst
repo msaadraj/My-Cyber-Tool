@@ -1,0 +1,6 @@
+model\UserInput.class
+model\Validation.class
+Main.class
+gui\Design.class
+gui\Animations.class
+service\MainMenu.class
