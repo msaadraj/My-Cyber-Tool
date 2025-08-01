@@ -19,31 +19,31 @@
 
 - ⚡ Fun fact **I just bought Books for showcase, not for reading**
 
-<h1>📦 Java Inventory Management System</h1>
+<h1>🛡️ My Cyber Tool – Java-Based Phishing Scanner</h1>
 <p>
-  The Java Inventory Management System is a console-based application designed to help manage stock efficiently. It features animated startup screens, colorful prompts using ANSI escape codes, and a robust set of inventory tools — all from a user-friendly CLI interface.
+  <strong>My Cyber Tool</strong> is a smart, offline CLI-based application developed in Java to detect phishing threats in both URLs and email addresses. Featuring animated loading screens, colorful terminal output using ANSI escape codes, and ASCII art banners — it delivers a modern terminal experience with powerful scanning logic.
 </p>
 
-<h2>🛠️ Core Features:</h2>
+<h2>🔍 Core Features:</h2>
 
-<h3>➕ Add New Item:</h3>
+<h3>🌐 URL Scanner:</h3>
 <p>
-  Allows users to add new items to the inventory by entering item name, quantity, and price. Duplicate items are automatically detected and rejected with a clear error prompt.
+  Analyzes a given URL based on structure, TLD rarity, presence of hyphens, chained subdomains (e.g., <code>login-bank.com.verify-now.io</code>), and use of HTTP/HTTPS. Returns a "Safe" or "Suspicious" result with details.
 </p>
 
-<h3>🗑️ Delete Item:</h3>
+<h3>✉️ Email Scanner:</h3>
 <p>
-  Lets users remove an item from the inventory by entering its name. If the item is not found, an error message is displayed.
+  Validates email formats using custom regex, flags suspicious patterns in the local part (e.g., <code>invoice@</code>, <code>billing@</code>), and highlights sketchy domains or characters.
 </p>
 
-<h3>📝 Update Item Stock:</h3>
+<h3>📋 Animated CLI Interface:</h3>
 <p>
-  Enables users to update both the quantity and price of an existing item in the inventory.
+  The program includes a stylized ASCII-art main menu, animated loading spinners, and color-coded banners to guide the user throughout the scanning process.
 </p>
 
-<h3>🔍 View All Items:</h3>
+<h3>🧪 Sample Test Inputs:</h3>
 <p>
-  Displays a list of all inventory items with their details in a structured format, with individual banners for each item.
+  Use built-in test cases or input your own links and emails to see how the tool responds to known phishing patterns.
 </p>
 
 <h2>⚙️ Additional Functionalities:</h2>
@@ -78,40 +78,49 @@
 
 <h2>🚀 Project Purpose:</h2>
 <p>
-This project is developed to strengthen core Java programming skills while solving a real-world problem of inventory tracking and management. It demonstrates object-oriented principles, modular design, and interactive console-based UI using ANSI codes. The application allows users to efficiently manage stock, view, update, and delete inventory items, all through a user-friendly text interface.
+  This project was created to deepen core Java and cybersecurity skills by tackling the real-world challenge of phishing detection. It demonstrates object-oriented principles, modular design, concurrent programming, and an interactive console UI enhanced with ANSI colors and ASCII art. Users can scan URLs and email addresses for phishing indicators—all from a lightweight, offline CLI tool.
 </p>
 
- <h2>🛠️ Installation Requirements:</h2>
+<h2>🛠️ Installation Requirements:</h2>
 <ul>
   <li><strong>Java Development Kit:</strong> JDK 8 or above installed on your system</li>
   <li><strong>Text Editor or IDE:</strong> Any Java-supporting IDE like IntelliJ IDEA, Eclipse, or VS Code</li>
   <li><strong>Terminal/Command-Line:</strong> Basic knowledge to compile and run Java programs</li>
-  <li><strong>CSV File Support:</strong> Ensure the project directory contains <code>inventory.csv</code> file for data persistence</li>
+  <li><strong>Resource Files:</strong> Ensure the project’s <code>src/main/resources/sounds/</code> and <code>src/main/resources/fonts/</code> folders contain the required <code>.wav</code> and Figlet <code>.flf</code> files</li>
 </ul>
 
 <h2>💻 Usage Instructions:</h2>
-<p>To compile and run the Inventory Management System from your terminal:</p>
+<p>To compile and run the PhishGuard CLI tool from your terminal:</p>
 <pre><code>
-// Step 1: Compile all Java files inside the 'src' folder
-javac -d . src/main/*.java src/model/*.java src/service/*.java src/gui/*.java
+// Step 1: Navigate to your project root
+cd path/to/PhishGuard
 
-java Main
+// Step 2: Compile all Java source files
+mvn compile
+
+// Step 3: Run the application
+mvn exec:java -Dexec.mainClass="com.example.Main"
 </code></pre>
 <p>
-  Make sure the <code>inventory.csv</code> file is present in the root directory to ensure proper data loading and saving.
+  Alternatively, build a “fat” JAR and run:<br>
+  <code>mvn package</code><br>
+  <code>java -jar target/PhishGuard-1.0.0.jar</code>
 </p>
 
 <h2>📸 Screenshots / Demo:</h2>
-<p>Below is a preview of the Inventory Management System in action:</p>
+<p>Below is a preview of the My Cyber Tool in action:</p>
 
 <h3> Starting Page:</h3>
-<img src="https://github.com/msaadraj/Inventory-Management-System/blob/main/SS/Startup%20page.PNG" alt="Password Generation Screenshot" width="600" />
+<img src="https://github.com/msaadraj/My-Cyber-Tool/blob/main/screenshots/Start%20Page.PNG" alt="Password Generation Screenshot" width="600" />
 
 <h3> Main Menu:</h3>
-<img src="https://github.com/msaadraj/Inventory-Management-System/blob/main/SS/Main%20Menu.PNG" alt="Password Checker Screenshot" width="600" />
+<img src="https://github.com/msaadraj/My-Cyber-Tool/blob/main/screenshots/Main%20Menu.PNG" alt="Password Checker Screenshot" width="600" />
 
-<h3> Veiw All Items:</h3>
-<img src="https://github.com/msaadraj/Inventory-Management-System/blob/main/SS/Veiwing%20Items.PNG" alt="Password Checker Screenshot" width="600" />
+<h3> Scanning URL Link :</h3>
+<img src="https://github.com/msaadraj/My-Cyber-Tool/blob/main/screenshots/Scans%20URL.PNG" alt="Password Checker Screenshot" width="600" />
+
+<h3> Scanning Email :</h3>
+<img src="https://github.com/msaadraj/My-Cyber-Tool/blob/main/screenshots/Scans%20Email.PNG" width="600" />
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
@@ -157,6 +166,19 @@ java Main
 </p>
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=msaadraj&show_icons=true&locale=en&layout=compact" alt="msaadraj" /></p>
+
+<!-- GitHub Commit Streak -->
+<section>
+  <h2>🔥 GitHub Commit Streak</h2>
+  <a href="https://github.com/msaadraj" target="_blank" rel="noopener">
+    <img
+      src="https://github-readme-streak-stats.herokuapp.com/?user=msaadraj&theme=dark&hide_border=true"
+      alt="GitHub Streak"
+      style="max-width: 100%; height: auto;"
+    />
+  </a>
+</section>
+
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=msaadraj&show_icons=true&locale=en" alt="msaadraj" /></p>
 
